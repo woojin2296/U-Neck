@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" />
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="filters" value="pointcloud"/>
+    </include>
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+
+    <node pkg="control_module" type="launch.py" name="control_module" output="screen" />
+    <node pkg="data_save_module" type="launch.py" name="data_save_module" output="screen" />
+</launch>

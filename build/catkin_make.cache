@@ -1,0 +1,2 @@
+control_module:data_save_module:u_neck
+-DCATKIN_DEVEL_PREFIX=/home/ubicomp/uneck-ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubicomp/uneck-ws/install -G Unix Makefiles

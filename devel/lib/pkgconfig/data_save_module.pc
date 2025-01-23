@@ -1,0 +1,8 @@
+prefix=/home/ubicomp/uneck-ws/devel
+
+Name: data_save_module
+Description: Description of data_save_module
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

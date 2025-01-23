@@ -1,0 +1,8 @@
+prefix=/home/ubicomp/uneck-ws/devel
+
+Name: u_neck
+Description: Description of u_neck
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
