@@ -52,3 +52,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_save_module" TYPE FILE FILES "/home/ubicomp/uneck-ws/src/data_save_module/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/data_save_module" TYPE PROGRAM FILES "/home/ubicomp/uneck-ws/build/data_save_module/catkin_generated/installspace/local_save.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/data_save_module" TYPE PROGRAM FILES "/home/ubicomp/uneck-ws/build/data_save_module/catkin_generated/installspace/mobius_save.py")
+endif()
+
